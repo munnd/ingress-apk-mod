@@ -118,7 +118,7 @@ public class Entry {
             case MOD_ABOUT:
                 return "[MOD]";
             case MOD_ITEMS:
-                return "[ITEMS]";
+                return "[INVENTORY]";
         }
         return null;
     }

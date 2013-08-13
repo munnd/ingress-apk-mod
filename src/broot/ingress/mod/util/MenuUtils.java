@@ -20,13 +20,13 @@ public class MenuUtils {
             tabs.add(MenuTabId.MOD_ITEMS);
         }
         if (Config.showOrigItemsTab) {
-            tabs.add(MenuTabId.ITEMS);
+            tabs.add(MenuTabId.INVENTORY);
+        }
+        if (Config.showMissionTab) {
+            tabs.add(MenuTabId.MISSIONS);
         }
         if (Config.showIntelTab) {
             tabs.add(MenuTabId.INTEL);
-        }
-        if (Config.showMissionTab) {
-            tabs.add(MenuTabId.MISSION);
         }
         if (Config.showRecruitTab) {
             tabs.add(MenuTabId.RECRUIT);
@@ -47,12 +47,12 @@ public class MenuUtils {
                 return ModItemsActivity.class;
             case MOD_ABOUT:
                 return AboutModActivity.class;
-            case ITEMS:
+            case INVENTORY:
                 return ItemsActivity.class;
+            case MISSIONS:
+                return MissionListActivity.class;
             case INTEL:
                 return IntelActivity.class;
-            case MISSION:
-                return MissionListActivity.class;
             case RECRUIT:
                 return RecruitActivity.class;
             case DEVICE:
