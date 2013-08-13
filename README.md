@@ -3,7 +3,7 @@ Ingress "broot" mod
 
 It's a modification of official Ingress app for Android. It works by patching apk file, project sources don't contain any prioprietary bits of NianticLabs.
 
-Unfortunately it's not that easy to build it from sources, because it was developed as a set of helper scripts and it depends highly on an environment and many additional tools. For this reason at this moment it's not recommended for regular users. It's for developers. If you aren't one then search for already built apks on my site: http://ingress-apk-mod.o4kapuk.info/
+Unfortunately it's not that easy to build it from sources, because it was developed as a set of helper scripts and it depends highly on an environment and many additional tools. For this reason at this moment it's not recommended for regular users. It's for developers. If you aren't one then search for already built apks in the internet.
 
 Features
 --------
@@ -12,6 +12,7 @@ Features
 - support for HVGA and QVGA screens
 - muted version of an app - it's a lot smaller
 - UI tweaks:
+    - skip globe intro anim
     - disable scanner zoom in anim - it's GPU consuming and delays portal dialog opening
     - disable vectors to portals
     - disable portal particles (XM "fountain" above portals)
@@ -35,6 +36,11 @@ Other features:
 
 News
 ----
+13.08.2013 - **v1.33.0-broot-1.0.3 has been released!**
+
+Changes from 1.0.2:
+
+- Migrated to 1.33.0
 
 1.08.2013 - **v1.32.1-broot-1.0.2 has been released!**
 
