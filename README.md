@@ -21,7 +21,7 @@ Features
     - revert to old deploy behavior (auto highest to lowest and lowest to highest)
     - disable recycle animation
     - change time format in chat
-- real-time distance to portal on portal info and portal upgrade screens - it's good for deploying resonators close to 40m distance
+- real-time distance to portal on portal info screen - it's good for deploying resonators close to 40m distance
 - keys number on portal info screen
 - option to hide unwanted menu tabs
 - fullscreen mode
