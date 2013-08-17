@@ -265,4 +265,8 @@ public class Entry {
             default:  return tf24ns;
         }
     }
+
+    public static boolean SoundEffects_shouldSwapHackingSounds() {
+        return Config.swapHackingSounds;
+    }
 }
