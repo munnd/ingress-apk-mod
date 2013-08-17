@@ -11,7 +11,6 @@ public class Config {
     public static boolean swapTouchMenuButtons;
     public static boolean swapHackingSounds;
 
-
     public static ItemsTab itemsTab;
     public static boolean showOrigItemsTab;
     public static boolean showIntelTab;
