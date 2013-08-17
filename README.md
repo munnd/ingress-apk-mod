@@ -36,6 +36,8 @@ Other features:
 News
 ----
 
+- Added an option to swap the sfx used when hacking a non-neutral portal
+
 15.08.2013 – Migrated to 1.33.0
 
 1.08.2013 – **v1.32.1-broot-1.0.2 has been released!**
