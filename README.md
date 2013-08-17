@@ -12,7 +12,7 @@ Features
 - support for HVGA and QVGA screens
 - muted version of an app - it's a lot smaller
 - UI tweaks:
-    - skip globe intro anim (Disabled for now)
+    - skip globe intro anim
     - disable scanner zoom in anim - it's GPU consuming and delays portal dialog opening
     - disable vectors to portals
     - disable portal particles (XM "fountain" above portals)
@@ -41,6 +41,7 @@ News
 Changes from 1.0.2:
 
 - Migrated to 1.33.0
+- Added an option to swap the sfx used when hacking a non-neutral portal
 
 1.08.2013 - **v1.32.1-broot-1.0.2 has been released!**
 
