@@ -236,7 +236,6 @@ def main():
     edit.save()
 
     edit = edit_cls('CommsAdapter')
-    edit.prepare_after_prologue('bindView')
     edit.find_line(r' iget-object v3, p0, %s->l:%s' % (expr('$CommsAdapter'), expr('$SimpleDateFormat')))
     edit.comment_line()
     edit.add_invoke_entry('CommsAdapter_getDateFormat', '', 'v3')

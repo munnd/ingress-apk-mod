@@ -262,7 +262,7 @@ public class AboutModActivity extends BaseSubActivity {
             Config.save();
         }
         gameplayTweaksItem.buttons.get(0).setText(Config.deployBehavior.desc);
-        gameplayTweaksItem.buttons.get(1).setText(Config.swapTouchMenuButtons ? "Swap" : "Leave");
+        gameplayTweaksItem.buttons.get(1).setText(Config.swapTouchMenuButtons ? "Swap" : "Default");
     }
 
     private void updateTabsValues(boolean save) {
