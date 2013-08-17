@@ -53,6 +53,15 @@ public class AboutModActivity extends BaseSubActivity {
                         updateGameplayTweaksValues(true);
                     }
                 });
+                gameplayTweaksItem.addButton("Swap Hack SFX", "", new ClickListener() {
+                    @Override
+                    public void clicked(InputEvent event, float x, float y) {
+                        Config.swapHackingSounds = !Config.swapHackingSounds;
+                        updateGameplayTweaksValues(true);
+                        gameplayTweaksItem.descLabel.setText("Restart to update SFX");
+                        restartItem.descLabel.setText("Restart is recommended");
+                    }
+                });
                 addItem(gameplayTweaksItem);
 
                 tabsItem = new ListItem(skin, "Menu tabs", null);
@@ -263,6 +272,7 @@ public class AboutModActivity extends BaseSubActivity {
         }
         gameplayTweaksItem.buttons.get(0).setText(Config.deployBehavior.desc);
         gameplayTweaksItem.buttons.get(1).setText(Config.swapTouchMenuButtons ? "Swap" : "Default");
+        gameplayTweaksItem.buttons.get(2).setText(Config.swapHackingSounds ? "Swap" : "Default");
     }
 
     private void updateTabsValues(boolean save) {

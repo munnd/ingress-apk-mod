@@ -282,5 +282,19 @@ def main():
     edit.add_line(' :noswap')
     edit.save()
 
+    # swap hacking sound effects
+    edit = edit_cls('SoundEffects')
+    edit.find_line(' \.locals 12')
+    edit.replace_in_line('12', '13')
+    edit.find_line(' sput-object v0, Lcom/nianticproject/ingress/common/c/bd;->F:Lcom/nianticproject/ingress/common/c/bd;')
+    edit.prepare_to_insert()
+    edit.add_invoke_entry('SoundEffects_shouldSwapHackingSounds', ret='v12')
+    edit.add_line(' if-eqz v12, :noswap')
+    edit.add_line(' sget-object v12, Lcom/nianticproject/ingress/common/c/bd;->E:Lcom/nianticproject/ingress/common/c/bd;')
+    edit.add_line(' sput-object v0, Lcom/nianticproject/ingress/common/c/bd;->E:Lcom/nianticproject/ingress/common/c/bd;')
+    edit.add_line(' sput-object v12, Lcom/nianticproject/ingress/common/c/bd;->F:Lcom/nianticproject/ingress/common/c/bd;')
+    edit.add_line(' :noswap')
+    edit.save()
+
 if __name__ == '__main__':
     main()
