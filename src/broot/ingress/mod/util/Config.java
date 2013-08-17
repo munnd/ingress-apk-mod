@@ -9,6 +9,8 @@ public class Config {
 
     public static DeployBehavior deployBehavior;
     public static boolean swapTouchMenuButtons;
+    public static boolean swapHackingSounds;
+
 
     public static ItemsTab itemsTab;
     public static boolean showOrigItemsTab;
@@ -40,6 +42,7 @@ public class Config {
 
         deployBehavior = DeployBehavior.valueOf(prefs.getString("deployBehavior", "MANUAL"));
         swapTouchMenuButtons = prefs.getBoolean("swapTouchMenuButtons", false);
+        swapHackingSounds = prefs.getBoolean("swapHackingSounds", false);
 
         itemsTab = ItemsTab.valueOf(prefs.getString("itemsTab", "HIDDEN"));
         showOrigItemsTab = prefs.getBoolean("showOrigItemsTab", true);
@@ -77,6 +80,7 @@ public class Config {
 
         e.putString("deployBehavior", deployBehavior.toString());
         e.putBoolean("swapTouchMenuButtons", swapTouchMenuButtons);
+        e.putBoolean("swapHackingSounds", swapHackingSounds);
 
         e.putString("itemsTab", itemsTab.toString());
         e.putBoolean("showOrigItemsTab", showOrigItemsTab);

@@ -25,6 +25,7 @@ broot.ingress.mod.Entry:
     ScannerStateManager_onEnablePortalVectors: [null, Z]
     PlayerModelUtils_onGetDefaultResonatorToDeploy: [null, Ljava/util/Map;, Ljava/util/TreeMap;]
     ScannerTouchHandler_shouldSwapTouchMenuButtons: [null, Z]
+    SoundEffects_shouldSwapHackingSounds: [null, Z]
     ZoomInMode_shouldZoomIn: [null, Z]
     PortalInfoDialog_getOpenDelay: [null, F, F]
     PortalUpgrade_onStatsTableCreated: [null, V, $PortalUpgradeUi, $Table]
@@ -212,6 +213,9 @@ com.nianticproject.ingress.common.audio.AudioSystemManager:
 
 com.nianticproject.ingress.common.audio.SpectrographSoundFinder:
   find_by_string: '"spectrogaph version incompatible for "'
+
+com.nianticproject.ingress.common.audio.SoundEffects:
+  find_by_string: '"SFX_PORTAL_HACKING_ALIEN"'
 
 ### GFX
 
